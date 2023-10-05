@@ -267,6 +267,24 @@
       "detalle": "Una pelota diseñada para un juego suave en pistas cubiertas.",
       "popularidad": 4.8,
       "categoria":"Deporte"
+    },
+    {
+      "id": 31,
+      "producto": "Raqueta de tenis profesional",
+      "imagen":"https://i.pinimg.com/564x/d5/20/1d/d5201d1d3a7320eb12219e9ec7e9e5f5.jpg",
+      "precio": 199.99,
+      "detalle del producto": "Una raqueta de tenis de alta gama utilizada por profesionales del deporte.",
+      "popularidad del producto": 4.9,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 32,
+      "producto": "Casco de ciclismo aerodinámico",
+      "imagen":"https://i.pinimg.com/564x/3f/c9/52/3fc95294fe53f982623746647aa7830d.jpg",
+      "precio": 149.99,
+      "detalle del producto": "Un casco diseñado para mejorar la aerodinámica y la seguridad al andar en bicicleta a altas velocidades.",
+      "popularidad del producto": 4.7,
+      "categoria":"Deporte"
     }
   ]
 }
