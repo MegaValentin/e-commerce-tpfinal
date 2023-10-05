@@ -1,0 +1,272 @@
+{ 
+  "productos":[
+    {
+      "id": 1,
+      "imagen":"https://i.pinimg.com/564x/e7/db/f7/e7dbf7e361fa3f861434b914e6c4839f.jpg",
+      "producto": "Camisa de algodón",
+      "precio": 29.99,
+      "detalle": "Una elegante camisa de algodón en varios colores y tallas.",
+      "popularidad": 4.7,
+      "categoria":"Moda"
+    },
+    {
+      "id": 2,
+      "imagen":"https://i.pinimg.com/564x/6a/0d/22/6a0d223011bd03d8e947494457c8150f.jpg",
+      "producto": "Zapatos deportivos",
+      "precio": 49.99,
+      "detalle": "Zapatos cómodos y duraderos ideales para actividades deportivas.",
+      "popularidad": 4.5,
+      "categoria":"Moda"
+    },
+    {
+      "id": 3,
+      "imagen":"https://i.pinimg.com/564x/49/65/dd/4965ddb6297352e8e5b6794778ca1a8e.jpg",
+      "producto": "Bolso de cuero",
+      "precio": 79.99,
+      "detalle": "Un bolso de cuero genuino con múltiples compartimentos.",
+      "popularidad": 4.8,
+      "categoria":"Moda"
+    },
+    {
+      "id": 4,
+      "imagen":"https://i.pinimg.com/564x/5f/b5/ff/5fb5ff803609fa32a548d6e1cbc6d892.jpg",
+      "producto": "Reloj de pulsera",
+      "precio": 99.99,
+      "detalle": "Un reloj elegante y funcional para cualquier ocasión.",
+      "popularidad": 4.6,
+      "categoria":"Moda"
+    },
+    {
+      "id": 5,
+      "imagen":"https://i.pinimg.com/564x/24/b4/5d/24b45d4e5c272cf1946e476ca4c38630.jpg",
+      "producto": "Gafas de sol",
+      "precio": 39.99,
+      "detalle": "Gafas de sol con protección UV y diseño moderno.",
+      "popularidad": 4.4
+    },
+    {
+      "id": 6,
+      "imagen":"https://i.pinimg.com/564x/ad/32/47/ad32472f491f9e08702500a098c72477.jpg",
+      "producto": "Pantalones vaqueros",
+      "precio": 59.99,
+      "detalle": "Pantalones vaqueros de alta calidad en diferentes estilos.",
+      "popularidad": 4.9,
+      "categoria":"Moda"
+    },
+    {
+      "id": 7,
+      "imagen":"https://i.pinimg.com/564x/2b/69/c5/2b69c5a48d832e7cc3042016d9e60de1.jpg",
+      "producto": "Sombrero de lana",
+      "precio": 19.99,
+      "detalle": "Un sombrero de lana suave y cálido para el invierno.",
+      "popularidad": 4.3,
+      "categoria":"Moda"
+    },
+    {
+      "id": 8,
+      "imagen":"https://i.pinimg.com/564x/80/5d/59/805d5902fbe72b2f9acd1f4bad3c0d10.jpg",
+      "producto": "Bolso de viaje",
+      "precio": 89.99,
+      "detalle": "Un amplio bolso de viaje con ruedas y asa retráctil.",
+      "popularidad": 4.7,
+      "categoria":"Moda"
+    },
+    {
+      "id": 9,
+      "imagen":"https://i.pinimg.com/564x/96/f5/73/96f573d992ec258d5630a0221e56babf.jpg",
+      "producto": "Pendientes de plata",
+      "precio": 34.99,
+      "detalle": "Elegantes pendientes de plata con incrustaciones de piedras preciosas.",
+      "popularidad": 4.6,
+      "categoria":"Moda"
+    },
+    {
+      "id": 10,
+      "imagen":"https://i.pinimg.com/564x/b8/d0/cd/b8d0cd1c99dff397b45394cb78347d51.jpg",
+      "producto": "Cinturón de cuero",
+      "precio": 44.99,
+      "detalle": "Un cinturón de cuero duradero y elegante para hombres y mujeres.",
+      "popularidad": 4.5,
+      "categoria":"Moda"
+    },
+    {
+      "id": 11,
+      "imagen":"https://i.pinimg.com/564x/ca/1d/d0/ca1dd011c948ef172300f3530df843f6.jpg",
+      "producto": "Portátil ultrabook",
+      "precio": 1099.99,
+      "detalle": "Un portátil ultraligero con potente rendimiento y batería de larga duración.",
+      "popularidad": 4.8,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 12,
+      "imagen":"https://i.pinimg.com/564x/ba/ee/5a/baee5a3e128f5976131387f6f8ba85d7.jpg",
+      "producto": "Auriculares Bluetooth",
+      "precio": 129.99,
+      "detalle": "Auriculares inalámbricos con cancelación de ruido y calidad de sonido premium.",
+      "popularidad": 4.7,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 13,
+      "imagen":"https://i.pinimg.com/564x/1f/bf/17/1fbf175f757119986fe055b48389d9cc.jpg",
+      "producto": "Smartphone de gama alta",
+      "precio": 999.99,
+      "detalle": "Un smartphone con pantalla AMOLED, cámara de alta resolución y procesador potente.",
+      "popularidad": 4.9,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 14,
+      "imagen":"https://i.pinimg.com/564x/e3/03/c8/e303c8098f33a93e89f48ea02fe49faa.jpg",
+      "producto": "Tableta gráfica profesional",
+      "precio": 499.99,
+      "detalle": "Una tableta gráfica de alta precisión para diseñadores y artistas digitales.",
+      "popularidad": 4.6
+    },
+    {
+      "id": 15,
+      "imagen":"https://i.pinimg.com/564x/2b/69/00/2b69000301659ed0d7cb9abf9cc61ad1.jpg",
+      "producto": "Altavoz inteligente",
+      "precio": 149.99,
+      "detalle": "Un altavoz con asistente virtual integrado y sonido de alta fidelidad.",
+      "popularidad": 4.5,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 16,
+      "imagen":"https://i.pinimg.com/564x/13/9a/d1/139ad101ef85435e2e216f712bd7b1bb.jpg",
+      "producto": "Cámara sin espejo",
+      "precio": 899.99,
+      "detalle": "Una cámara compacta con sensor de alta resolución y capacidades de grabación de video 4K.",
+      "popularidad": 4.7,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 17,
+      "imagen":"https://i.pinimg.com/564x/3f/02/4a/3f024a47f0ba3f67ccf328515367378a.jpg",
+      "producto": "Auriculares gaming",
+      "precio": 179.99,
+      "detalle": "Auriculares con sonido envolvente, micrófono retráctil y compatibilidad con varias plataformas.",
+      "popularidad": 4.8,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 18,
+      "imagen":"https://i.pinimg.com/564x/c4/54/2e/c4542e0fde47d1a1675058d29e0598ef.jpg",
+      "producto": "Teclado mecánico RGB",
+      "precio": 129.99,
+      "detalle": "Un teclado mecánico con retroiluminación personalizable y switches de alta calidad.",
+      "popularidad": 4.6,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 19,
+      "imagen":"https://i.pinimg.com/564x/97/1f/27/971f277e43b5079d81bcb5331b85fbb2.jpg",
+      "producto": "Monitor curvo de 27 pulgadas",
+      "precio": 399.99,
+      "detalle": "Un monitor curvo con resolución QHD para una experiencia de visualización inmersiva.",
+      "popularidad": 4.7,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 20,
+      "imagen":"https://i.pinimg.com/564x/80/e0/97/80e097ee3d37bf13eea12607ffb69f5e.jpg",
+      "producto": "Router Wi-Fi de alta velocidad",
+      "precio": 179.99,
+      "detalle": "Un router con tecnología de última generación para una conexión rápida y estable.",
+      "popularidad": 4.5,
+      "categoria":"Tecnologia"
+    },
+    {
+      "id": 21,
+      "imagen":"https://i.pinimg.com/564x/08/1a/ed/081aed5da3d4d92fbe688f2c83b792cf.jpg",
+      "producto": "Bicicleta de montaña",
+      "precio": 799.99,
+      "detalle": "Una bicicleta diseñada para terrenos difíciles y aventuras al aire libre.",
+      "popularidad": 4.8,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 22,
+      "imagen":"https://i.pinimg.com/564x/52/6e/14/526e14e15b9533b529a0d100d5461d9b.jpg",
+      "producto": "Balón de fútbol profesional",
+      "precio": 49.99,
+      "detalle": "Un balón de alta calidad para entrenamientos y partidos oficiales.",
+      "popularidad": 4.7,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 23,
+      "imagen":"https://i.pinimg.com/564x/60/72/4d/60724d8d2b2af756b024f858027e0c80.jpg",
+      "producto": "Raqueta de tenis de mesa",
+      "precio": 39.99,
+      "detalle": "Una raqueta diseñada para jugadores de tenis de mesa de todos los niveles.",
+      "popularidad": 4.6,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 24,
+      "imagen":"https://i.pinimg.com/564x/8a/45/2e/8a452ee12e2bbffe3f5a3593be890117.jpg",
+      "producto": "Zapatillas de running",
+      "precio": 89.99,
+      "detalle": "Zapatillas diseñadas para proporcionar comodidad y soporte durante la carrera.",
+      "popularidad": 4.9,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 25,
+      "imagen":"https://i.pinimg.com/564x/95/17/32/95173254cbb4c14d7e294ca09c6263ae.jpg",
+      "producto": "Equipo de buceo completo",
+      "precio": 499.99,
+      "detalle": "Un conjunto de alta calidad que incluye traje de buceo, aletas y máscara.",
+      "popularidad": 4.7,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 26,
+      "imagen":"https://i.pinimg.com/564x/4d/d9/65/4dd965349447ef32ea6c39a355104b70.jpg",
+      "producto": "Mancuernas ajustables",
+      "precio": 129.99,
+      "detalle": "Mancuernas versátiles con pesos intercambiables para entrenamientos personalizados.",
+      "popularidad": 4.8,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 27,
+      "imagen":"https://i.pinimg.com/564x/01/93/f2/0193f26e66843f12c4b9335d9f46e02b.jpg",
+      "producto": "Tabla de paddle surf inflable",
+      "precio": 349.99,
+      "detalle": "Una tabla de paddle surf inflable que proporciona diversión en el agua.",
+      "popularidad": 4.6,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 28,
+      "imagen":"https://i.pinimg.com/564x/80/39/98/8039982018785c5f6cffb649f93a0af3.jpg",
+      "producto": "Guantes de boxeo profesionales",
+      "precio": 79.99,
+      "detalle": "Guantes de boxeo de alta calidad diseñados para entrenamientos intensivos y competiciones.",
+      "popularidad": 4.9,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 29,
+      "imagen":"https://i.pinimg.com/564x/9d/48/f0/9d48f0aa16861d88f13a246eea51bdc3.jpg",
+      "producto": "Cinta de correr plegable",
+      "precio": 899.99,
+      "detalle": "Una cinta de correr que se pliega fácilmente para ahorrar espacio en casa.",
+      "popularidad": 4.7,
+      "categoria":"Deporte"
+    },
+    {
+      "id": 30,
+      "imagen":"https://i.pinimg.com/564x/ee/cb/1e/eecb1ea889e2d68feec2cbb63b59d17b.jpg",
+      "producto": "Pelota de baloncesto indoor",
+      "precio": 29.99,
+      "detalle": "Una pelota diseñada para un juego suave en pistas cubiertas.",
+      "popularidad": 4.8,
+      "categoria":"Deporte"
+    }
+  ]
+}
