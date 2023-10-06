@@ -1,4 +1,6 @@
 @import url(./imports/base.css);
 @import url(./imports/variables.css);
+@import url(./imports/navabar.css);
 @import url(./pages/index.css);
 @import url(./pages/compra.css);
+@import url(./pages/productos.css);

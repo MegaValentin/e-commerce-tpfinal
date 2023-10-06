@@ -1,35 +1,17 @@
-const productos = "/app/data/productos.json"
+import { navBar } from "./js/navbar.js";
+import { vistaProductos } from "./js/productos.js";
 
-const main = document.getElementById('main')
+navBar()
 
-getProductos(productos)
-
-function getProductos(url) {
-    fetch(url).then(res => res.json()).then(dato => {
-        console.log(dato.productos)
-        mostrarProductos(dato.productos)
-    })
+function getCurrentFileName() {
+    let pathArray = window.location.pathname.split('/');
+    return pathArray[pathArray.length - 1];
+    
 }
-function mostrarProductos(dato){
-    main.innerHTML = ``
 
-    dato.forEach(productos => {
-        const {id, producto, imagen,  precio, detalle, popularidad, categoria } = productos;
-        const productoDiv = document.createElement('div')
-        productoDiv.classList.add('cards-productos')
-        console.log(`${producto}`)
-        productoDiv.innerHTML = `
-        <img src="${imagen}" alt="${producto}">
-        <div class="producto-info">
-            <h3>${producto}</h3>
-            <span class="precio">${precio}</span>
-        </div>
-        <div class="vista-general">
-            
-            <button class="leer-mas" id="${id}">Leer mas</button>
-            <button class="agregar" id="${id}">Agregar al carrito</button>
-        </div>
-        `;
-        main.appendChild(productoDiv);
-    });
+const currentFileName = getCurrentFileName();
+
+if (currentFileName === 'vistaProductos.html') {
+    
+    vistaProductos();
 }
