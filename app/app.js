@@ -1,5 +1,6 @@
 import { navBar } from "./js/navbar.js";
 import { vistaProductos } from "./js/productos.js";
+import { catalogo } from "./js/index.js";
 
 navBar()
 
@@ -10,8 +11,9 @@ function getCurrentFileName() {
 }
 
 const currentFileName = getCurrentFileName();
-
-if (currentFileName === 'vistaProductos.html') {
-    
+if (currentFileName === 'index.html'){
+    catalogo()
+}
+else if (currentFileName === 'vistaProductos.html') {
     vistaProductos();
 }

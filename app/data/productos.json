@@ -42,7 +42,8 @@
       "producto": "Gafas de sol",
       "precio": 39.99,
       "detalle": "Gafas de sol con protección UV y diseño moderno.",
-      "popularidad": 4.4
+      "popularidad": 4.4,
+      "categoria":"Moda"
     },
     {
       "id": 6,
@@ -122,7 +123,8 @@
       "producto": "Tableta gráfica profesional",
       "precio": 499.99,
       "detalle": "Una tableta gráfica de alta precisión para diseñadores y artistas digitales.",
-      "popularidad": 4.6
+      "popularidad": 4.6,
+      "categoria":"Tecnologia"
     },
     {
       "id": 15,
@@ -273,8 +275,8 @@
       "producto": "Raqueta de tenis profesional",
       "imagen":"https://i.pinimg.com/564x/d5/20/1d/d5201d1d3a7320eb12219e9ec7e9e5f5.jpg",
       "precio": 199.99,
-      "detalle del producto": "Una raqueta de tenis de alta gama utilizada por profesionales del deporte.",
-      "popularidad del producto": 4.9,
+      "detalle": "Una raqueta de tenis de alta gama utilizada por profesionales del deporte.",
+      "popularidad": 4.9,
       "categoria":"Deporte"
     },
     {
@@ -282,9 +284,117 @@
       "producto": "Casco de ciclismo aerodinámico",
       "imagen":"https://i.pinimg.com/564x/3f/c9/52/3fc95294fe53f982623746647aa7830d.jpg",
       "precio": 149.99,
-      "detalle del producto": "Un casco diseñado para mejorar la aerodinámica y la seguridad al andar en bicicleta a altas velocidades.",
-      "popularidad del producto": 4.7,
+      "detalle": "Un casco diseñado para mejorar la aerodinámica y la seguridad al andar en bicicleta a altas velocidades.",
+      "popularidad": 4.7,
       "categoria":"Deporte"
+    },
+    {
+      "id": 33,
+      "imagen":"https://i.pinimg.com/564x/61/78/92/617892dd07b36528159bc67b73af6edc.jpg",
+      "producto": "Sofá de tres plazas",
+      "precio": 699.99,
+      "detalle": "Un cómodo sofá de tres plazas con tapizado de tela.",
+      "popularidad": 4.8,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 34,
+      "imagen":"https://i.pinimg.com/564x/03/ac/8e/03ac8ee01a4ed31533bb08fa01f3b921.jpg",
+      "producto": "Mesa de comedor de roble",
+      "precio": 499.99,
+      "detalle": "Una elegante mesa de comedor de roble macizo con capacidad para 6 personas.",
+      "popularidad": 4.7,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 35,
+      "imagen":"https://i.pinimg.com/564x/82/bd/62/82bd6259e873b3b4efb315fd835bbcf7.jpg",
+      "producto": "Silla de oficina ergonómica",
+      "precio": 199.99,
+      "detalle": "Una silla de oficina ergonómica con soporte lumbar ajustable.",
+      "popularidad": 4.9,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 36,
+      "imagen":"https://i.pinimg.com/564x/e7/25/b8/e725b8127873f619bd64d8af130df662.jpg",
+      "producto": "Cómoda de dormitorio",
+      "precio": 349.99,
+      "detalle": "Una cómoda de dormitorio con cajones espaciosos y diseño moderno.",
+      "popularidad": 4.6,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 37,
+      "imagen":"https://i.pinimg.com/564x/2e/92/91/2e929103d0335f50493a70a3b22d18be.jpg",
+      "producto": "Armario de almacenamiento",
+      "precio": 599.99,
+      "detalle": "Un armario de almacenamiento con estantes ajustables y puertas corredizas.",
+      "popularidad": 4.7,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 38,
+      "imagen":"https://i.pinimg.com/564x/01/06/93/0106936687e94be4a285dd96bc024df3.jpg",
+      "producto": "Mesa de centro de cristal",
+      "precio": 259.99,
+      "detalle": "Una mesa de centro elegante con tapa de cristal templado.",
+      "popularidad": 4.8,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 39,
+      "imagen":"https://i.pinimg.com/564x/91/02/76/91027681c1606a5febe5ab669a031b73.jpg",
+      "producto": "Silla plegable de jardín",
+      "precio": 79.99,
+      "detalle": "Una silla plegable de jardín perfecta para espacios al aire libre.",
+      "popularidad": 4.5,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 40,
+      "imagen":"https://i.pinimg.com/564x/f9/12/d0/f912d09bdd22fee786050dd4a5463172.jpg",
+      "producto": "Escritorio de trabajo",
+      "precio": 329.99,
+      "detalle": "Un escritorio de trabajo con amplia superficie y cajón incorporado.",
+      "popularidad": 4.6,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 41,
+      "imagen":"https://i.pinimg.com/564x/b5/7f/c9/b57fc968779090da7b70790700825c37.jpg",
+      "producto": "Estante de pared flotante",
+      "precio": 89.99,
+      "detalle": "Un estante de pared flotante para exhibir libros y decoraciones.",
+      "popularidad": 4.8,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 42,
+      "imagen":"https://i.pinimg.com/564x/f0/e0/d4/f0e0d43206d556858458a5191e7017a3.jpg",
+      "producto": "Mesa auxiliar de madera",
+      "precio": 149.99,
+      "detalle": "Una mesa auxiliar de madera con diseño rústico y funcionalidad versátil.",
+      "popularidad": 4.7,
+      "categoria": "Muebles"
+    },
+    {
+      "id": 43,
+      "imagen":"https://i.pinimg.com/564x/d1/cb/99/d1cb994daa26e4a361b5e4ff2f8be7d3.jpg",
+      "producto": "Silla de comedor tapizada",
+      "precio": 129.99,
+      "detalle": "Una silla de comedor con tapizado suave y diseño elegante.",
+      "popularidad": 4.6,
+      "categoria":"Muebles"
+    },
+    {
+      "id": 44,
+      "imagen":"https://i.pinimg.com/564x/c6/75/86/c67586f2bda9b30ebb41c65f12b20b98.jpg",
+      "producto": "Cama con cabecero acolchado",
+      "precio": 899.99,
+      "detalle": "Una cama con cabecero acolchado y espacio de almacenamiento integrado.",
+      "popularidad": 4.9,
+      "categoria":"Muebles"
     }
   ]
 }

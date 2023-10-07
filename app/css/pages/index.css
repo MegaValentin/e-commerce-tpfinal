@@ -1,0 +1,26 @@
+.catalago{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.cards-categoria{
+    width: 20%;
+    width: auto;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.5);
+    background-color: var(--main-5-color);
+    position: relative;
+    overflow: hidden;
+    border: solid 1px var(--main-1-color);
+}
+
+
+.categorias a{
+    text-decoration: none;
+    color: var(--main-1-color);
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

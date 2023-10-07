@@ -7,7 +7,7 @@ export function navBar(){
     
     navegacion.innerHTML = `
             <div class="logo">
-                <h1>Mi Logo</h1>
+                <h1>MM</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="./index.html">Inicio</a></li>
