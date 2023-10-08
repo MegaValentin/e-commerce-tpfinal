@@ -2,6 +2,7 @@ export function catalogo(){
     const productos = "/app/data/productos.json"
 
     const catalogo = document.getElementById('catalago')
+    const productosContainer = document.getElementById('productos')
 
     getCategorias(productos)
 
@@ -47,7 +48,27 @@ export function catalogo(){
             
         }).catch(error => console.error('Error:', error));
     }
-    function mostrarProductos(productos){
-        console.log(productos)
+    function mostrarProductos(dato){
+        console.log(dato)
+        productosContainer.innerHTML = ``
+        dato.forEach(productos => {
+            const {id, producto, imagen,  precio, detalle, popularidad, categoria } = productos;
+            const productosDiv = document.createElement('div')
+            productosDiv.classList.add('cards-productos')
+            productosDiv.innerHTML = `
+                <img src="${imagen}" alt="${producto}">
+                <div class="producto-info">
+                    <h3>${producto}</h3>
+                    <span class="precio">${precio}</span>
+                </div>
+                <div class="vista-general">
+                    <button class="leer-mas" id="${id}">Leer mas</button>
+                    <button class="agregar" id="${id}">Agregar al carrito</button>
+                </div>
+            `;
+            productosContainer.appendChild(productosDiv)
+        })
+        
+
     }
 }

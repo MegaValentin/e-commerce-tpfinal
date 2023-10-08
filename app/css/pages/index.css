@@ -4,6 +4,11 @@
     justify-content: center;
     
 }
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
 .cards-categoria{
     width: 20%;
     width: auto;
