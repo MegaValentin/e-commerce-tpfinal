@@ -19,21 +19,35 @@ export function catalogo(){
         catalogo.innerHTML = `
          `;
         dato.forEach(categorias => {
-            const catagoriaDiv = document.createElement('div')
-            catagoriaDiv.classList.add('cards-categoria')
+            const categoriaDiv = document.createElement('div')
+            categoriaDiv.classList.add('cards-categoria')
             console.log(categorias);
-            catagoriaDiv.innerHTML = `
+            categoriaDiv.innerHTML = `
                 <div class="categorias">
-                    <a href="#">${categorias}<img src="./app/img/categorias/${categorias}.png" alt="${categorias}"></a>
+                    <a href="#" data-categoria="${categorias}">${categorias}<img src="./app/img/categorias/${categorias}.png" alt="${categorias}"></a>
                 </div>
             `;
-            catalogo.appendChild(catagoriaDiv)
-            
-            
+            catalogo.appendChild(categoriaDiv)
+             
         });
+        const linksCategorias = document.querySelectorAll('.cards-categoria a');
+        linksCategorias.forEach(link => {
+            link.addEventListener('click', (event) =>{
+                event.preventDefault();
+                const categoria = event.target.dataset.categoria
+                mostrarProductosPorCategoria(categoria);
+            })
+        })
     }
-    
-      
-    
-
+    function mostrarProductosPorCategoria(categoria){
+        console.log(categoria)
+        fetch(productos).then(response => response.json()).then(data => {
+            const productosFiltrados = data.productos.filter(producto => producto.categoria === categoria)
+            mostrarProductos(productosFiltrados)
+            
+        }).catch(error => console.error('Error:', error));
+    }
+    function mostrarProductos(productos){
+        console.log(productos)
+    }
 }
