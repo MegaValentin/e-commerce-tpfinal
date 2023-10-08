@@ -40,6 +40,7 @@ export function catalogo(){
             })
         })
     }
+    
     function mostrarProductosPorCategoria(categoria){
         console.log(categoria)
         fetch(productos).then(response => response.json()).then(data => {
@@ -48,6 +49,7 @@ export function catalogo(){
             
         }).catch(error => console.error('Error:', error));
     }
+
     function mostrarProductos(dato){
         console.log(dato)
         productosContainer.innerHTML = ``

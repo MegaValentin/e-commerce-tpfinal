@@ -395,6 +395,42 @@
       "detalle": "Una cama con cabecero acolchado y espacio de almacenamiento integrado.",
       "popularidad": 4.9,
       "categoria":"Muebles"
+    },
+    {
+      "id": 45,
+      "imagen": "https://i.pinimg.com/564x/e7/2b/06/e72b0654afb329ec6883eb6f3f25c0c3.jpg",
+      "producto": "Vestido de noche elegante",
+      "precio": 159.99,
+      "detalle": "Un vestido de noche elegante y sofisticado, perfecto para ocasiones especiales.",
+      "popularidad": 4.8,
+      "categoria": "Moda"
+    },
+    {
+      "id": 46,
+      "imagen": "https://i.pinimg.com/564x/1a/02/d7/1a02d737d5e679414e5fa341193d4c5a.jpg",
+      "producto": "Botas de cuero altas",
+      "precio": 119.99,
+      "detalle": "Botas de cuero de alta calidad con un diseño moderno y cómodo.",
+      "popularidad": 4.7,
+      "categoria": "Moda"
+    },
+    {
+      "id": 47,
+      "imagen": "https://i.pinimg.com/564x/ea/ec/6e/eaec6eba3f9fd0d1477568b63cc61a17.jpg",
+      "producto": "Auriculares inalámbricos deportivos",
+      "precio": 79.99,
+      "detalle": "Auriculares inalámbricos diseñados para deportes y actividades al aire libre.",
+      "popularidad": 4.6,
+      "categoria": "Tecnologia"
+    },
+    {
+      "id": 48,
+      "imagen": "https://i.pinimg.com/564x/75/49/81/754981014ee62b2e474d93947f280f2d.jpg",
+      "producto": "Cámara de seguridad inteligente",
+      "precio": 149.99,
+      "detalle": "Una cámara de seguridad con visión nocturna y control remoto desde tu smartphone.",
+      "popularidad": 4.9,
+      "categoria": "Tecnologia"
     }
   ]
 }
