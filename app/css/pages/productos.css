@@ -9,7 +9,7 @@
     justify-content: center;
 }
 .cards-productos{
-    width: 16em;
+    width: 18em;
     margin: 1rem;
     border-radius: 3px;
     box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.5);
@@ -18,6 +18,7 @@
     overflow: hidden;
     border: solid 1px var(--main-1-color);
 }
+
 .cards-productos img{
     width: 100%;
     height:75%;
@@ -31,6 +32,8 @@
 }
 .vista-general{
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     left: 0;
     right: 0;
     bottom: 0;
@@ -42,4 +45,23 @@
 }
 .cards-productos:hover .vista-general{
     transform: translateY(0);
+}
+.leer-mas {
+    background-color: var(--main-1-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 5.3rem;
+    height: 2rem;
+    font-size: 17px;
+}
+.agregar{
+    background-color: var(--main-1-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 5.3rem;
+    height: 2rem;
+    font-size: 10px;
+    
 }

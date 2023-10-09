@@ -9,3 +9,40 @@ body{
     margin: 0;
     background-color: var(--main-5-color);
 }
+header{
+    margin-bottom: 15px;
+}
+nav{
+    background-color: var(--main-1-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.footer{
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-5-color);
+    padding: 10px 20px;
+    color: white;
+}

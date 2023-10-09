@@ -12,7 +12,8 @@ export function navBar(){
             <ul class="nav-links">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./vistaProductos.html">Productos</a></li>
-                <li><a href="#">Categoria</a></li>
+                <li><a href="./categorias.html">Categoria</a></li>
+                <li><a href="#">Ver Carrito</a></li>
             </ul>
         `;
         navbar.appendChild(navegacion)
