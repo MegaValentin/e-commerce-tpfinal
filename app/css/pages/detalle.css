@@ -1,0 +1,33 @@
+/* Mobile */
+
+/* Tablete 1280 */
+
+/* Desktop 1366 */
+.detalle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.detalle .box1{
+    max-width: 400px;
+    margin: 3.2em;
+}
+.detalle .box2{
+    margin: 3.2em;
+    padding: 20px;
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.detalle .box2 h2{
+    text-align: center;
+    margin: 20px;
+}
+.detalle .box2 p{
+    margin-top: 20px;
+}
+.btn{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}

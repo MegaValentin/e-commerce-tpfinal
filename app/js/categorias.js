@@ -17,8 +17,8 @@ export function catalogo(){
     }
     
     function mostrarCategorias(dato){
-        catalogo.innerHTML = `
-         `;
+        catalogo.innerHTML = ``;
+
         dato.forEach(categorias => {
             const categoriaDiv = document.createElement('div')
             categoriaDiv.classList.add('cards-categoria')
@@ -28,9 +28,11 @@ export function catalogo(){
                     <a href="#" data-categoria="${categorias}">${categorias}<img src="./app/img/categorias/${categorias}.png" alt="${categorias}"></a>
                 </div>
             `;
+
             catalogo.appendChild(categoriaDiv)
              
         });
+        
         const linksCategorias = document.querySelectorAll('.cards-categoria a');
         linksCategorias.forEach(link => {
             link.addEventListener('click', (event) =>{
@@ -64,7 +66,7 @@ export function catalogo(){
                     <span class="precio">${precio}</span>
                 </div>
                 <div class="vista-general">
-                    <button class="leer-mas" id="${id}">Leer mas</button>
+                    <a href="detalleProducto.html?id=${id}" class="leer-mas">Leer mas</a>
                     <button class="agregar" id="${id}">Agregar al carrito</button>
                 </div>
             `;

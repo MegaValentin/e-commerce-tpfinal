@@ -26,7 +26,7 @@ export function vistaProductos(){
                     <span class="precio">${precio}</span>
                 </div>
                 <div class="vista-general">
-                    <button class="leer-mas" id="${id}">Leer mas</button>
+                    <a href="detalleProducto.html?id=${id}" class="leer-mas">Leer mas</a>      
                     <button class="agregar" id="${id}">Agregar al carrito</button>
                 </div>
             `;

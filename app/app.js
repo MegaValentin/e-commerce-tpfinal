@@ -2,9 +2,11 @@ import { navBar } from "./js/navbar.js";
 import { vistaProductos } from "./js/productos.js";
 import { catalogo } from "./js/categorias.js";
 import { footer } from "./js/footer.js";
+import { detalleProductos } from "./js/detalleProducto.js";
 
 navBar()
 footer()
+
 function getCurrentFileName() {
     let pathArray = window.location.pathname.split('/');
     return pathArray[pathArray.length - 1];
@@ -17,4 +19,7 @@ if (currentFileName === 'categorias.html'){
 }
 else if (currentFileName === 'vistaProductos.html') {
     vistaProductos();
+}
+else if (currentFileName === 'detalleProducto.html'){
+    detalleProductos()
 }

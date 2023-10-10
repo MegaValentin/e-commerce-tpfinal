@@ -54,6 +54,8 @@
     width: 5.3rem;
     height: 2rem;
     font-size: 17px;
+    text-align: center;
+    text-decoration: none;
 }
 .agregar{
     background-color: var(--main-1-color);
