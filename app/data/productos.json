@@ -12,9 +12,9 @@
     {
       "id": 2,
       "imagen":"https://i.pinimg.com/564x/6a/0d/22/6a0d223011bd03d8e947494457c8150f.jpg",
-      "producto": "Zapatos deportivos",
+      "producto": "Zapatillas deportivas",
       "precio": 49.99,
-      "detalle": "Zapatos cómodos y duraderos ideales para actividades deportivas.",
+      "detalle": "Zapatillas cómodas y duraderas ideales para actividades deportivas.",
       "popularidad": 4.5,
       "categoria":"Moda"
     },
@@ -39,9 +39,9 @@
     {
       "id": 5,
       "imagen":"https://i.pinimg.com/564x/24/b4/5d/24b45d4e5c272cf1946e476ca4c38630.jpg",
-      "producto": "Gafas de sol",
+      "producto": "Anteojos de sol",
       "precio": 39.99,
-      "detalle": "Gafas de sol con protección UV y diseño moderno.",
+      "detalle": "Anteojos de sol con protección UV y diseño moderno.",
       "popularidad": 4.4,
       "categoria":"Moda"
     },
@@ -57,9 +57,9 @@
     {
       "id": 7,
       "imagen":"https://i.pinimg.com/564x/2b/69/c5/2b69c5a48d832e7cc3042016d9e60de1.jpg",
-      "producto": "Sombrero de lana",
+      "producto": "Gorro de lana",
       "precio": 19.99,
-      "detalle": "Un sombrero de lana suave y cálido para el invierno.",
+      "detalle": "Un gorro de lana suave y cálido para el invierno.",
       "popularidad": 4.3,
       "categoria":"Moda"
     },
@@ -111,7 +111,7 @@
     {
       "id": 13,
       "imagen":"https://i.pinimg.com/564x/1f/bf/17/1fbf175f757119986fe055b48389d9cc.jpg",
-      "producto": "Smartphone de gama alta",
+      "producto": "Smartphone",
       "precio": 999.99,
       "detalle": "Un smartphone con pantalla AMOLED, cámara de alta resolución y procesador potente.",
       "popularidad": 4.9,
@@ -138,7 +138,7 @@
     {
       "id": 16,
       "imagen":"https://i.pinimg.com/564x/13/9a/d1/139ad101ef85435e2e216f712bd7b1bb.jpg",
-      "producto": "Cámara sin espejo",
+      "producto": "Cámara",
       "precio": 899.99,
       "detalle": "Una cámara compacta con sensor de alta resolución y capacidades de grabación de video 4K.",
       "popularidad": 4.7,
@@ -192,18 +192,18 @@
     {
       "id": 22,
       "imagen":"https://i.pinimg.com/564x/52/6e/14/526e14e15b9533b529a0d100d5461d9b.jpg",
-      "producto": "Balón de fútbol profesional",
+      "producto": "Pelota de fútbol profesional",
       "precio": 49.99,
-      "detalle": "Un balón de alta calidad para entrenamientos y partidos oficiales.",
+      "detalle": "Una pelota de alta calidad para entrenamientos y partidos oficiales.",
       "popularidad": 4.7,
       "categoria":"Deporte"
     },
     {
       "id": 23,
       "imagen":"https://i.pinimg.com/564x/60/72/4d/60724d8d2b2af756b024f858027e0c80.jpg",
-      "producto": "Raqueta de tenis de mesa",
+      "producto": "Paleta de Ping Pong",
       "precio": 39.99,
-      "detalle": "Una raqueta diseñada para jugadores de tenis de mesa de todos los niveles.",
+      "detalle": "Una paleta diseñada para jugadores de ping pong de todos los niveles.",
       "popularidad": 4.6,
       "categoria":"Deporte"
     },

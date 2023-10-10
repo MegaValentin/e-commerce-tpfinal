@@ -15,27 +15,17 @@ export function detalleProductos(){
         //solicitud GET
         objeto.open('GET', '/app/data/productos.json', true)
         objeto.onload = function(){
-            if (objeto.status >= 200 && objeto.status < 400){
-
-                const data = JSON.parse(objeto.responseText)
-                const productoEncontrado = data.productos.find(producto => producto.id === parseInt(id))
-
-                if (productoEncontrado){
-                    mostrarDetalle(productoEncontrado)
-                }
-                else{
-                    console.error("Producto no encontrado")
-                }
-    
-            }else{
-                console.error("error al cargar el archivo")
-            }
+          
+            const data = JSON.parse(objeto.responseText)
+            const productoEncontrado = data.productos.find(producto => producto.id === parseInt(id))
+            mostrarDetalle(productoEncontrado) 
         }
         objeto.onerror = function(){
             console.error('Error de red')
         }
         objeto.send()
     }
+
     function mostrarDetalle(producto){
         const detalle = document.getElementById('detalle')
         detalle.innerHTML = `
@@ -48,8 +38,7 @@ export function detalleProductos(){
                 <p>Categoría: ${producto.categoria}</p>
                 <div class="btn">
                     <a href="./categorias.html">Volver a productos</a>
-                    <a href="#">Agregar al carrito</a>
-
+                    <button class="agregar" id="${producto.id}">Agregar al carrito</button>
                 <div>
             </div>
         `

@@ -47,23 +47,29 @@
     transform: translateY(0);
 }
 .leer-mas {
-    background-color: var(--main-1-color);
-    color: white;
-    border-radius: 5px;
-    border: none;
-    width: 5.3rem;
-    height: 2rem;
-    font-size: 17px;
-    text-align: center;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
     text-decoration: none;
+    background-color: var(--main-1-color);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.leer-mas:hover{
+    background-color: var(--main-2-color);
 }
 .agregar{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
     background-color: var(--main-1-color);
-    color: white;
+    color: #fff;
     border-radius: 5px;
-    border: none;
-    width: 5.3rem;
-    height: 2rem;
-    font-size: 10px;
-    
+    font-size: 16px;
+    cursor: pointer;
+}
+.agregar:hover{
+    background-color: var(--main-2-color);
 }

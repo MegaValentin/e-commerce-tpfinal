@@ -18,6 +18,7 @@
     background-color: #f8f8f8; 
     border: 1px solid #ccc;
     border-radius: 8px;
+    align-items: center;
 }
 .detalle .box2 h2{
     text-align: center;
@@ -30,4 +31,17 @@
     margin: 20px;
     display: flex;
     justify-content: space-between;
+}
+.btn a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: var(--main-1-color);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn a:hover{
+    background-color: var(--main-2-color);
 }
