@@ -67,12 +67,30 @@ export function catalogo(){
                 </div>
                 <div class="vista-general">
                     <a href="detalleProducto.html?id=${id}" class="leer-mas">Leer mas</a>
-                    <button class="agregar" id="${id}">Agregar al carrito</button>
+                    <button class="agregar" data-producto='${JSON.stringify(productos)}'>Agregar al carrito</button>
                 </div>
             `;
             productosContainer.appendChild(productosDiv)
+
+            const agregarBtn = productosDiv.querySelector('.agregar')
+            agregarBtn.addEventListener('click', agregarAlCarrito)
         })
         
 
+    }
+    function agregarAlCarrito(event){
+        const producto = JSON.parse(event.target.dataset.producto)
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        const productoCarrito = carrito.find(item => item.id === producto.id)
+
+        if (productoCarrito){
+            productoCarrito.cantidad++
+        }else{
+            producto.cantidad = 1
+            carrito.push(producto)
+        }
+
+        localStorage.setItem('carrito', JSON.stringify(carrito))
     }
 }

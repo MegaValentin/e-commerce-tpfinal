@@ -38,12 +38,31 @@ nav{
     margin: 0;
     font-size: 24px;
 }
-.footer{
-    
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--main-5-color);
-    padding: 10px 20px;
-    color: white;
+/*footer*/
+.footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column {
+    align-items: center;
+    text-align: left;
+}
+.column h3 {
+    color: #343a40;
+}
+
+.column p {
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }

@@ -38,11 +38,27 @@ export function detalleProductos(){
                 <p>Categoría: ${producto.categoria}</p>
                 <div class="btn">
                     <a href="./categorias.html">Volver a productos</a>
-                    <button class="agregar" id="${producto.id}">Agregar al carrito</button>
+                    <button class="agregar" data-producto='${JSON.stringify(producto)}'>Agregar al carrito</button>
                 <div>
             </div>
-        `
-           
-            
+        `;
+        const agregarBtn = detalle.querySelector('.agregar')
+        agregarBtn.addEventListener('click', agregarAlCarrito)    
+    }
+    
+    function agregarAlCarrito(event){
+        const producto = JSON.parse(event.target.dataset.producto)
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        const productoCarrito = carrito.find(item => item.id === producto.id)
+
+        if (productoCarrito){
+            productoCarrito.cantidad++
+        }else{
+            producto.cantidad = 1
+            carrito.push(producto)
+        }
+
+        localStorage.setItem('carrito', JSON.stringify(carrito))
     }
 }
