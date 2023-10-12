@@ -1,0 +1,21 @@
+.list-productos {
+    list-style: none;
+    padding: 10px 20px;
+    width: 42rem;
+}
+.carrito-producto {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--main-1-color);
+    margin: 10px;
+    padding: 10px; 
+}
+.carrito-producto img{
+    width: 5.5rem;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--main-1-color);
+}
+.info{
+    margin: 20px;
+}

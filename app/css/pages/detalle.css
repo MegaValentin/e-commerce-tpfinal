@@ -29,6 +29,7 @@
 }
 .btn{
     margin: 20px;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }

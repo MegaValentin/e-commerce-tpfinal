@@ -90,7 +90,7 @@ export function catalogo(){
             producto.cantidad = 1
             carrito.push(producto)
         }
-
+        alert(`Se agrego ${producto.producto} correctamente`)
         localStorage.setItem('carrito', JSON.stringify(carrito))
     }
 }
