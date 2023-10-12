@@ -18,7 +18,6 @@ export function vistaProductos(){
             const {id, producto, imagen,  precio, detalle, popularidad, categoria } = productos;
             const productoDiv = document.createElement('div')
             productoDiv.classList.add('cards-productos')
-            console.log(`${producto}`)
             productoDiv.innerHTML = `
                 <img src="${imagen}" alt="${producto}">
                 <div class="producto-info">
@@ -50,6 +49,19 @@ export function vistaProductos(){
             carrito.push(producto)
         }
 
+        mostrarMensaje(`Se agrego "${producto.producto}" correctamente`)
         localStorage.setItem('carrito', JSON.stringify(carrito))
+    }
+
+    function mostrarMensaje(mensaje){
+        const mensajeDiv = document.createElement('div')
+        mensajeDiv.classList.add('mensaje')
+        mensajeDiv.textContent = mensaje
+
+        document.body.appendChild(mensajeDiv)
+
+        setTimeout(() => {
+            mensajeDiv.remove()
+        },2000)
     }
 }

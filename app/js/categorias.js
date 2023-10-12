@@ -18,7 +18,7 @@ export function catalogo(){
     
     function mostrarCategorias(dato){
         catalogo.innerHTML = ``;
-
+        productosContainer.innerHTML = `<h1>hola</h1>`
         dato.forEach(categorias => {
             const categoriaDiv = document.createElement('div')
             categoriaDiv.classList.add('cards-categoria')
@@ -46,14 +46,21 @@ export function catalogo(){
     function mostrarProductosPorCategoria(categoria){
         console.log(categoria)
         fetch(productos).then(response => response.json()).then(data => {
+
             const productosFiltrados = data.productos.filter(producto => producto.categoria === categoria)
-            mostrarProductos(productosFiltrados)
-            
+            if(productosFiltrados <= 0){
+                productosContainer.innerHTML = `<h1>chau</h1>`
+            }
+            else{
+                mostrarProductos(productosFiltrados)
+            }
+
         }).catch(error => console.error('Error:', error));
     }
 
     function mostrarProductos(dato){
         console.log(dato)
+
         productosContainer.innerHTML = ``
         dato.forEach(productos => {
             const {id, producto, imagen,  precio, detalle, popularidad, categoria } = productos;
@@ -74,6 +81,7 @@ export function catalogo(){
 
             const agregarBtn = productosDiv.querySelector('.agregar')
             agregarBtn.addEventListener('click', agregarAlCarrito)
+
         })
         
 
@@ -90,7 +98,19 @@ export function catalogo(){
             producto.cantidad = 1
             carrito.push(producto)
         }
-        alert(`Se agrego ${producto.producto} correctamente`)
+        mostrarMensaje(`Se agrego "${producto.producto}" correctamente`)
         localStorage.setItem('carrito', JSON.stringify(carrito))
+    }
+
+    function mostrarMensaje(mensaje){
+        const mensajeDiv = document.createElement('div')
+        mensajeDiv.classList.add('mensaje')
+        mensajeDiv.textContent = mensaje
+
+        document.body.appendChild(mensajeDiv)
+
+        setTimeout(() => {
+            mensajeDiv.remove()
+        },2000)
     }
 }

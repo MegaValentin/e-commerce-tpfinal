@@ -3,6 +3,17 @@
     padding: 10px 20px;
     width: 42rem;
 }
+.carrito-vacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+
+}
+.carrito-vacio img {
+    margin-top: 20px; 
+}
 .carrito-producto {
     display: flex;
     justify-content: space-between;

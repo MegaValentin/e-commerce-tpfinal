@@ -59,6 +59,19 @@ export function detalleProductos(){
             carrito.push(producto)
         }
 
+        mostrarMensaje(`Se agrego "${producto.producto}" correctamente`)
         localStorage.setItem('carrito', JSON.stringify(carrito))
+    }
+
+    function mostrarMensaje(mensaje){
+        const mensajeDiv = document.createElement('div')
+        mensajeDiv.classList.add('mensaje')
+        mensajeDiv.textContent = mensaje
+
+        document.body.appendChild(mensajeDiv)
+
+        setTimeout(() => {
+            mensajeDiv.remove()
+        },2000)
     }
 }
