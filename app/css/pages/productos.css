@@ -46,7 +46,9 @@
 .cards-productos:hover .vista-general{
     transform: translateY(0);
 }
-.leer-mas {
+.leer-mas,
+.comprar,
+.volver{
     display: inline-block;
     padding: 5px 10px;
     margin: 5px;
@@ -56,7 +58,9 @@
     border-radius: 5px;
     font-size: 16px;
 }
-.leer-mas:hover{
+.leer-mas:hover,
+.comprar:hover,
+.volver:hover{
     background-color: var(--main-2-color);
 }
 .agregar{

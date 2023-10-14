@@ -3,6 +3,8 @@ export function catalogo(){
 
     const catalogo = document.getElementById('catalago')
     const productosContainer = document.getElementById('productos')
+    
+    
 
     getCategorias(productos)
 
@@ -18,7 +20,13 @@ export function catalogo(){
     
     function mostrarCategorias(dato){
         catalogo.innerHTML = ``;
-        productosContainer.innerHTML = `<h1>hola</h1>`
+        productosContainer.innerHTML = `
+        <div>
+            <img src="./app/img/MEGA-removebg-preview.png" alt="">
+            <h1>Las mejores OFERTAS</h1>
+        </div>
+        
+        `
         dato.forEach(categorias => {
             const categoriaDiv = document.createElement('div')
             categoriaDiv.classList.add('cards-categoria')
@@ -49,7 +57,13 @@ export function catalogo(){
 
             const productosFiltrados = data.productos.filter(producto => producto.categoria === categoria)
             if(productosFiltrados <= 0){
-                productosContainer.innerHTML = `<h1>chau</h1>`
+                
+                productosContainer.innerHTML = `
+                <div>
+                    <img src="./app/img/MEGA-removebg-preview.png" alt="">
+                    <h1>Las mejores OFERTAS</h1>
+                </div>
+                `
             }
             else{
                 mostrarProductos(productosFiltrados)
