@@ -98,10 +98,6 @@ export function carrito(){
             const filtrar = carrito.filter(item => item.id !== productoId)
             localStorage.setItem('carrito', JSON.stringify(filtrar))
             renderizarCarrito()
-        }
-        
-       
+        } 
     })
-   
-    
 } 

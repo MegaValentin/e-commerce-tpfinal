@@ -16,6 +16,8 @@
 }
 .carrito-div{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .carrito-producto {
     display: flex;

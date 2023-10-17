@@ -8,7 +8,7 @@ export function navBar(){
     navegacion.innerHTML = `
         
         <div class="logo">
-            <h1>MM</h1>
+            <h1>MEGA MERCADO</h1>
         </div>
         <div class="menu-toggle">
             <div class="bar"></div>

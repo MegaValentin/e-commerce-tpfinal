@@ -15,11 +15,11 @@ function getCurrentFileName() {
 }
 
 const currentFileName = getCurrentFileName();
-if (currentFileName === 'categorias.html'){
-    catalogo()
-}
-else if (currentFileName === 'index.html') {
+if (currentFileName === 'index.html') {
     vistaProductos()
+}
+else if (currentFileName === 'categorias.html'){
+    catalogo()
 }
 else if (currentFileName === 'detalleProducto.html'){
     detalleProductos()

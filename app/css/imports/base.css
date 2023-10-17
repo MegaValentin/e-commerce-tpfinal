@@ -10,6 +10,16 @@ body{
     margin: 0;
     background-color: var(--main-5-color);
 }
+/*mensaje de confirmacion*/
+.mensaje {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 /*Nav*/
 .navegacion {
     background-color: var(--main-1-color);
@@ -72,6 +82,7 @@ body{
 .row {
     display: flex;
     flex-wrap: wrap;
+    
 }
 .box1, .box2 {
     flex: 0 0 50%;
@@ -110,7 +121,7 @@ h3{
         display: none;
         flex-direction: column;
         position: absolute;
-        background-color: #333;
+        background-color: var(--main-1-color);
         width: 100%;
         top: 56px;
         left: 0;
@@ -118,12 +129,15 @@ h3{
         padding: 10px 0;
     }
     .nav-list.active {
-        
         display: block;
         z-index: 9999;
     }
     .nav-list li {
         margin: 10px 0;
+        
+    }
+    .nav-list li a{
+        margin: 15px;
     }
     .box1, .box2 {
       flex: 0 0 100%;
