@@ -22,7 +22,7 @@ export function catalogo(){
         catalogo.innerHTML = ``;
         productosContainer.innerHTML = `
         <div>
-            <img src="./app/img/MEGA-removebg-preview.png" alt="">
+            <img src="./app/img/MEGA-removebg-preview.png" alt="MEGA MERCADO">
             <h1>Las mejores OFERTAS</h1>
         </div>
         

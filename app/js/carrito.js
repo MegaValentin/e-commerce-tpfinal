@@ -86,6 +86,11 @@ export function carrito(){
                     window.location.reload();
                 });
             });
+            formularioCompra.addEventListener('submit', (event) =>{
+                event.preventDefault()
+                localStorage.removeItem('carrito')
+                window.location.href = 'compraExitosa.html'
+            })
 
         }
         

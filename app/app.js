@@ -18,7 +18,7 @@ const currentFileName = getCurrentFileName();
 if (currentFileName === 'categorias.html'){
     catalogo()
 }
-else if (currentFileName === 'vistaProductos.html') {
+else if (currentFileName === 'index.html') {
     vistaProductos()
 }
 else if (currentFileName === 'detalleProducto.html'){

@@ -11,7 +11,6 @@ export function navBar(){
             </div>
             <ul class="nav-links">
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./vistaProductos.html">Productos</a></li>
                 <li><a href="./categorias.html">Categoria</a></li>
                 <li><a href="./carrito.html">Ver Carrito</a></li>
             </ul>
