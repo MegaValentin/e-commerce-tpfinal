@@ -17,16 +17,18 @@ export function catalogo(){
             
         }).catch(error => console.error('Error:', error));
     }
-    
-    function mostrarCategorias(dato){
-        catalogo.innerHTML = ``;
+    function megaMercado(){
         productosContainer.innerHTML = `
         <div>
-            <img src="./app/img/MEGA-removebg-preview.png" alt="MEGA MERCADO">
+            <img src="./app/img/MEGA-removebg-preview.png" alt="MEGA MEGA">
             <h1>Las mejores OFERTAS</h1>
         </div>
         
         `
+    }
+    function mostrarCategorias(dato){
+        catalogo.innerHTML = ``;
+        megaMercado()
         dato.forEach(categorias => {
             const categoriaDiv = document.createElement('div')
             categoriaDiv.classList.add('cards-categoria')
@@ -57,13 +59,7 @@ export function catalogo(){
 
             const productosFiltrados = data.productos.filter(producto => producto.categoria === categoria)
             if(productosFiltrados <= 0){
-                
-                productosContainer.innerHTML = `
-                <div>
-                    <img src="./app/img/MEGA-removebg-preview.png" alt="">
-                    <h1>Las mejores OFERTAS</h1>
-                </div>
-                `
+                megaMercado()
             }
             else{
                 mostrarProductos(productosFiltrados)
