@@ -1,7 +1,9 @@
 export function navBar(){
+    //Obtengo  el elemento HTML con el ID "barraNavegacion"
     const navbar = document.getElementById("barraNavegacion")
 
     navbar.innerHTML = ``
+    //creo un nuevo elemento
     const navegacion = document.createElement('div')
     navegacion.classList.add('container')
     
@@ -24,10 +26,12 @@ export function navBar(){
         </nav>
         
         `;
+    //El elemento navegacion lo añado como hijo del elemento navbar
     navbar.appendChild(navegacion)
     const menuToggle = document.querySelector('.menu-toggle');
     const navList = document.querySelector('.nav-list');
-  
+    
+    //Evento click al elemento menuToggle.Cuando se hace clic en el botón de menú, se ejecuta la función anónima
     menuToggle.addEventListener('click', function() {
       navList.classList.toggle('active');
     });

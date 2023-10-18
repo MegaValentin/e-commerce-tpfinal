@@ -1,7 +1,9 @@
 export function detalleProductos(){
 
     window.addEventListener('DOMContentLoaded', () => {
+        //accedo a los parametros de la URL. Devuelve la cadena de consulta de la URL actual
         const parametrosURL = new URLSearchParams(window.location.search); 
+        //obtengo el valor del parametro ID de la URL
         const productoId = parametrosURL.get('id');  
         if (productoId) {
             obtenerProductoPorId(productoId);
@@ -11,18 +13,24 @@ export function detalleProductos(){
     //esta funcion recibe un ID y busca un producto en el JSON por ese ID
     function obtenerProductoPorId(id){
         console.log(id)
+        //hago una solicitud HTTP desde el navegador
         const objeto = new XMLHttpRequest()
-        //solicitud GET
+        //solicitud GET, URL del recurso que solicito, indico que la solicitud es asincrona
         objeto.open('GET', '/app/data/productos.json', true)
+        //Define una función que se ejecutará cuando la solicitud sea completada con éxito
         objeto.onload = function(){
-          
+            
+            //convierto la respuesta en un objeto. Esto me permite acceder y manipular los datos de manera mas sencilla
             const data = JSON.parse(objeto.responseText)
+            //busco  un elemento que cumpla con la condicion dada
             const productoEncontrado = data.productos.find(producto => producto.id === parseInt(id))
+            //muestro los detalles del producto
             mostrarDetalle(productoEncontrado) 
         }
         objeto.onerror = function(){
             console.error('Error de red')
         }
+        //Envía la solicitud HTTP.
         objeto.send()
     }
 

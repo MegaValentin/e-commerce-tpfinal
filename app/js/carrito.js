@@ -1,11 +1,14 @@
 export function carrito(){
-    
+    //Se ejecuta cuando el DOM está completamente cargado.
     document.addEventListener('DOMContentLoaded', () =>{
      
         const carritoContainer = document.getElementById('carrito')
+        //recupero los datos del carrito desde el almacenamiento local del navegador. Si no hay datos, inicializa carrito como un array vacío.
         const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        //calcula el total de la compra sumando el precio de cada producto multiplicado por la cantidad.
         const total = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0)
         
+        //Se verifica si el carrito tiene productos.
         if(carrito.length > 0){
             renderizarCarrito()
         }
@@ -19,7 +22,7 @@ export function carrito(){
             `
             carritoContainer.appendChild(carritoVacio)
         }
-        
+        //se encarga de mostrar los productos en el carrito y el formulario de compra
         function renderizarCarrito(){
             const carritoDiv = document.createElement('div')
             carritoDiv.classList.add('carrito-div')
@@ -82,7 +85,7 @@ export function carrito(){
                     console.log(productoId)
                     eliminarProducto(productoId)
 
-                    //Preguntar
+                    //Preguntar si hay otra forma de hacerlo, porque cuando sea un proyecto mas grande va a tardar en recargar la pagina
                     window.location.reload();
                 });
             });
