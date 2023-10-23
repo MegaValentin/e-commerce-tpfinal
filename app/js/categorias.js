@@ -37,9 +37,9 @@ export function catalogo(){
             categoriaDiv.classList.add('cards-categoria')
             console.log(categorias);
             categoriaDiv.innerHTML = `
-                <div class="categorias">
-                    <a href="#" data-categoria="${categorias}">${categorias}<img src="./app/img/categorias/${categorias}.png" alt="${categorias}"></a>
-                </div>
+                
+                <a href="#" data-categoria="${categorias}" class="categoria">${categorias}<img src="./app/img/categorias/${categorias}.png" alt="${categorias}"></a>
+                
             `;
 
             catalogo.appendChild(categoriaDiv)
