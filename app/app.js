@@ -17,7 +17,7 @@ function getCurrentFileName() {
 
 const currentFileName = getCurrentFileName();
 //comparo currentFileName con diferentes nombres de archivos y llamo las funciones correspondientes
-if (currentFileName === 'index.html') {
+if (currentFileName === 'index.html' || currentFileName === '') {
     vistaProductos()
 }
 else if (currentFileName === 'categorias.html'){
